@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CSGO Team</title>
+
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;} 
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1300px;
+        position: relative;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 150px;
+      }   
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 18px;
+        padding: 25px 10px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+        
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+
+      /*Form Style*/
+      #Form {
+        margin-left: 25%;
+        justify-self: center;
+        width: 50%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+      input[type=submit] {
+        background-color: black;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type=submit]:hover {
+        background-color: rgb(29, 29, 29);
+      }
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+      }
+      }
+    </style>
+
+</head>
+<body>
+
+  <!--Nav-->
+  <div class="title">  
+    <div class="logo"><img src="images/Faze.png" alt="Logo" style="width: 120px;"></div>
+    <div class="other" style="text-align: center; font-size: 400%">AZE</div>
+    <div class="thing" style="text-align: center">
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="shop.html">Shop</a>
+    </div>  
+  </div>
+
+  <!--upcoming events-->
+  <div class="border"></div>
+
+  <div id="times">
+    <div class="grid">
+      <div class="card" style="color: rgb(75, 75, 75)">
+        <p>Upcoming Matches</p>
+      </div>
+      <div class="card">
+        <p>Jan <h3>21</h3> Faze<br> <p style="font-size: 20px;">vs</p> G2 <p style="font-size: 20px;">10pm</p></p>
+      </div>
+      <div class="card">
+        <p>Feb <h3>9</h3> Faze<br> <p style="font-size: 20px;">vs</p> Astralis <p style="font-size: 20px;">12pm</p></p>
+      </div>
+      <div class="card">
+        <p>May <h3>23</h3> Faze<br> <p style="font-size: 20px;">vs</p> Ence <p style="font-size: 20px;">6pm</p></p>
+      </div>
+      <div class="card" style= "border-right: white">
+        <p>Jan <h3>1</h3> Faze<br> <p style="font-size: 20px;">vs</p> NAVI <p style="font-size: 20px;">3pm</p></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="border"></div>
+
+  <brbrbr>  
+
+  <!--SlideShow-->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/FazeWin.png" style="width:100%">
+      <div class="text">Faze</div>
+    </div>
+    <div class="mySlides fade">          
+      <img src="images/c9.jpg" style="width:100%">
+      <div class="text">Cloud 9</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/IEM-katowice.jpg" style="width:100%">
+      <div class="text">IEM-katowice</div>
+    </div>      
+    <div class="mySlides fade">
+      <img src="images/fnatic.jpeg" style="width:100%">
+      <div class="text">fnatic</div>
+    </div>  
+    <div class="mySlides fade">
+      <img src="images/EnvyMajor.png" style="width:100%">
+      <div class="text">Envy</div>
+    </div>   
+  </div>
+
+  <!--coming soon-->
+  <div class="soon">
+    <p style="padding: 50px;">Coming Soon</p>
+  </div>
+
+  <!--Form-->
+  <div id="Form" style="display: none">
+    <form action="index.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="Email" placeholder="some.one@gmail.com">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="contact">Contact Reason</label>
+      </div>
+      <div class="col-75">
+        <select id="contact" name="contact">
+          <option value="fan">Fan</option>
+          <option value="sponsor">Sponsor Aplacation</option>
+          <option value="teamaplacation">Want to join team</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <div>
+      <h1 style="margin-bottom: 15px; margin-top: 100px">About</h1>
+      <a href="https://twitter.com/FaZeClan" target="_blank"><p>Social Media</p></a>
+      <a href="team.html"><p>Players</p></a>
+    </div>
+    <div>
+        <h1 style="margin-bottom: 15px; margin-top: 100px">Team</h1>
+        <a href="https://twitter.com/FaZeClan" target="_blank"><p>Social Media</p></a>
+        <a href="team.html"><p>Players</p></a>
+    </div>
+    <div>
+        <h1 style="margin-bottom: 15px; margin-top: 100px">Contact</h1>
+        <a href="https://twitter.com/FaZeClan" target="_blank"><p>Social Media</p></a>
+        <button onclick="myFunction()"><p style="font-size: 20px;">Contact Us</p></button> 
+    </div>
+  </footer>
+
+  <!--Form Script--> 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Form");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+  <!--SlideShow Script-->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() 
+    {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1} 
+      slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 5000); // Change image every x seconds
+    }
+  </script>
+    
+</body>
+</html>
